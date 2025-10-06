@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Register</h2>
+      <form id="myForm">
+        <input type="text" id="name" placeholder="Name" />
+        <div class="error-message" id="nameError">Name is required.</div>
+
+        <input type="email" id="email" placeholder="Email" />
+        <div class="error-message" id="emailError">Enter a valid email.</div>
+
+        <input type="password" id="password" placeholder="Password" />
+        <div class="error-message" id="passwordError">
+          Password must be at least 6 characters, contain a number and a letter.
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
