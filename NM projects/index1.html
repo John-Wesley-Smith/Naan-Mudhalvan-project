@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Naan Mudhalvan</title>
+  <link rel="stylesheet" href="style1.css" />
+  <script src="script1.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <img src="logo.png" alt="Naan Mudhalvan Logo" class="logo" />
+      <h1>Login to<br><span>NAAN MUDHALVAN</span></h1>
+    </div>
+    <div class="right-section">
+      <form id="loginForm" class="login-form">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Username" required />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Password" required />
+          <a href="#" class="forgot">Forgot Password?</a>
+        </div>
+
+        <div class="captcha-section">
+          <img src="captcha.png" alt="Captcha" id="captchaImage" />
+          <button type="button" id="refreshCaptcha">↻</button>
+        </div>
+
+        <div class="input-group">
+          <label for="captcha">Captcha</label>
+          <input type="text" id="captcha" placeholder="Enter Captcha" required />
+        </div>
+
+        <button type="submit" class="login-btn">Login</button>
+        <p class="note">For New Organization/Industry Job Registration 
+          <a href="#">Click here</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
